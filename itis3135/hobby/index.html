@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        main{
+            width: 95%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        ul{
+            list-style-type: circle;
+            font-weight: bold;
+        }
+
+        li{
+            font-weight: lighter;
+        }
+
+        img{
+            width: 300px;
+            height: auto;
+        }
+
+        section {
+            display: none; 
+        }
+        a:hover{
+            color: green;
+            text-decoration: line;
+        }
+        footer{
+            img{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hobby: Avid Collecting</h1>
+
+        <nav>
+            <a href="#what">The Collection</a>
+            ||
+            <a href="#who">About Me</a>
+            ||
+            <a href="#schedule">Schedule</a>
+            ||
+            <a href="#where">Procurement</a>
+            ||
+            <a href="#how">How</a>
+            ||
+            <a href="#why">Why</a>
+            ||
+            <a href="#ai">AI Prompt</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="who">
+
+            <h2>Introdcution</h2>
+
+            <figure>
+                <img alt="a picture of me!" src="../images/me.png">
+                <figcaption>Nick Knoblauch ~ The Collector</figcaption>
+            </figure>
+            <p>
+                Not too extravagent of a hobby, but I am a collector of a multitude of "nerdy" things.
+                Such as comic books, trading cards, physical movie media, and action figures.
+            </p>
+            
+        </section>
+
+        <section id="what">
+
+            <h2>The Collection Details</h2>
+            
+            <p>Below I'll List Some Particulars</p>
+
+            <ul>
+                <li>Comics ~ Namely DC and Marvel</li>
+                <li>Trading Cards ~ Yu-Gi-OH!</li>
+                <li>Physical Media ~ 4Ks and Blu Rays</li>
+                <li>Action Figures ~ Namely Godzilla, Transformers, Alien, and Predator Figures</li>
+            </ul>
+
+            <figure>
+                <img alt="pic of my stuff" src="">
+                <figcaption>A Movie, Comic, Figure, and Yu-Gi-OH!</figcaption>
+                <figcaption>Each From my Collection</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="schedule">
+
+            <h2>Scheduling</h2>
+
+            <figure>
+                <img alt="" src="">
+                <figcaption></figcaption>
+            </figure>
+
+            <p>
+                Other than Comic Books, which is a once a month pick up.
+                There is no real schedule to the "when" of my collecting procurement. 
+                Unless a preorder had been priorly placed, and a purchse is expected.
+            </p>
+
+        </section>
+
+        <section id="where">
+
+            <h2>Procurement</h2>
+
+            <p>
+                Most things such as the movies, figures, and trading cards are procured online via online shops.
+                But the comic books are acquired throuhg a local comic shop. 
+                When it comes to retail comic shops, I've always found it fundmentally important to support your local shops. 
+            </p>
+
+            <figure>
+                <img alt="" src="">
+                <figcaption></figcaption>
+            </figure>
+
+        </section>
+
+        <section id="how">
+            <h2>How do I Manage So Many Items</h2>
+            <p>
+                Managing such a large assortment of items can be tough, but I have boxes for organizing and stacking comics.
+                A large specialized shelf for managing my physical movie media.
+                Also a large assortment of shelves for managing the figures.
+                Dusting and cleaning the items is important for keeping the value of said items. 
+            </p>
+
+            <figure>
+                <img alt="" src="">
+                <figcaption></figcaption>
+            </figure>
+
+        </section>
+
+        <section id="why">
+
+            <h2>Why do I Collect?</h2>
+
+            <figure>
+                <img alt="" src="">
+                <figcaption></figcaption>
+            </figure>
+
+            <p>
+                Collecting is something I always admired people for doing.
+                It's almost like trophy hunting for things the encapsulate your life and/or childhood.
+            </p>
+
+        </section>
+
+        <section id="ai">
+            <h2>How was AI used for this project?</h2>
+
+            <p>
+                AI was used to develope a "blank" outline for the JavaScript section.
+                From there the blanks were filled in to fit the HTML code for the project.
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Page Built By <a href="nickknoblauchdesigns.com/">Nick Knoblauch</a> &copy; 2025</p>
+        <a id="validation-button-html"><img src="../images/htmlValidationButton.png" alt="html validation button"></a>
+        <a id="validation-button-css"><img src="../images/cssValidationButton.png" alt="css validation button"></a>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                
+                
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                
+                const target = document.querySelector(link.getAttribute('href'));
+                target.style.display = 'block';
+            });
+        });
+
+        document.querySelector('#what').style.display = 'block';
+    </script>
+</body>
+</html>
