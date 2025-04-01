@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nick Knoblauch's Nice Kangaroo | ITIS3135 | Home
+        </title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <script src="scripts/survey.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            
+            <form id="introForm" action="#" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Nick Knoblauch" required><br><br>
+    
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" value="Kangaroo" required><br><br>
+    
+                <label for="image">Image (PNG/JPG):</label>
+                <input type="file" id="image" name="image" accept=".png, .jpg" required><br><br>
+    
+                <label for="imageCaption">Image Caption:</label>
+                <input type="text" id="imageCaption" name="imageCaption" value="Nick Knoblauch" required><br><br>
+    
+                <label for="personalBackground">Personal Background:</label>
+                <textarea id="personalBackground" name="personalBackground" required>Likes Comics, Movies, Video Games, and learning.</textarea><br><br>
+    
+                <label for="professionalBackground">Professional Background:</label>
+                <textarea id="professionalBackground" name="professionalBackground" required>I work at a movie theatre - AMC Northlake 14.</textarea><br><br>
+    
+                <label for="academicBackground">Academic Background:</label>
+                <textarea id="academicBackground" name="academicBackground" required>Junior at UNCC</textarea><br><br>
+    
+                <label for="webDevelopment">Background in Web Development:</label>
+                <textarea id="webDevelopment" name="webDevelopment" required>Limited</textarea><br><br>
+    
+                <label for="platform">Primary Computer Platform:</label>
+                <input type="text" id="platform" name="platform" value="Laptop" required><br><br>
+    
+                <label for="courses">Courses Currently Taking:</label>
+                <div id="coursesContainer">
+                    <input type="text" id="course1" name="courses[]" value="ITIS 3135 - Web-Based Application Design and Development"><button type="button" onclick="addCourse()">Add Course</button><br><br>
+                    <input type="text" id="course2" name="courses[]" value="ITIS 3130 - Human Centered Computing"><button type="button" onclick="addCourse()">Add Course</button><br><br>
+                    <input type="text" id="course3" name="courses[]" value="HIST 1502 - Issues in Global History"><button type="button" onclick="addCourse()">Add Course</button><br><br>
+                </div>
+    
+                <label for="funnyThing">Funny thing?</label>
+                <input type="text" id="funnyThing" name="funnyThing" value="I collect a variety of things such as physical media. Like comics and movies."><br><br>
+    
+                <label for="anythingElse">Anything else?</label>
+                <input type="text" id="anythingElse" name="anythingElse" value="On Letterboxd, I have logged having watched 3172 films and counting..."><br><br>
+    
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+                </label><br><br>
+    
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset" onclick="resetForm()">
+            </form>
+    
+            <div id="formResults" style="display:none;">
+                <h3>Your Submitted Information:</h3>
+                <p><strong>Name:</strong> <span id="resultName"></span></p>
+                <p><strong>Mascot:</strong> <span id="resultMascot"></span></p>
+                <p><strong>Image Caption:</strong> <span id="resultImageCaption"></span></p>
+                <p><strong>Personal Background:</strong> <span id="resultPersonalBackground"></span></p>
+                <p><strong>Professional Background:</strong> <span id="resultProfessionalBackground"></span></p>
+                <p><strong>Academic Background:</strong> <span id="resultAcademicBackground"></span></p>
+                <p><strong>Web Development Background:</strong> <span id="resultWebDevelopment"></span></p>
+                <p><strong>Primary Computer Platform:</strong> <span id="resultPlatform"></span></p>
+                <p><strong>Courses:</strong> <span id="resultCourses"></span></p>
+                <p><strong>Funny Thing:</strong> <span id="resultFunnyThing"></span></p>
+                <p><strong>Anything Else:</strong> <span id="resultAnythingElse"></span></p>
+                <a href="javascript:resetForm()">Reset Form</a>
+            </div>
+        </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
