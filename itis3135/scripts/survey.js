@@ -38,7 +38,7 @@ function removeCourse(button) {
 
 // Display the submitted form data in the same format as the intro
 function displayResults(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the form from submitting and refreshing the page
 
     const name = document.getElementById('name').value;
     const mascot = document.getElementById('mascot').value;
@@ -51,7 +51,9 @@ function displayResults(event) {
     const courses = document.querySelectorAll('input[name="courses[]"]');
     const funnyThing = document.getElementById('funnyThing').value;
     const anythingElse = document.getElementById('anythingElse').value;
+    const imageFile = document.getElementById('image').files[0];  // Get the image file
 
+    // Create an array for the courses
     const courseList = [];
     courses.forEach(course => {
         if (course.value.trim() !== '') {
@@ -59,7 +61,7 @@ function displayResults(event) {
         }
     });
 
-    // Show results in place of the form
+    // Display the results in the correct format
     document.getElementById('resultName').textContent = name;
     document.getElementById('resultMascot').textContent = mascot;
     document.getElementById('resultImageCaption').textContent = imageCaption;
@@ -68,10 +70,35 @@ function displayResults(event) {
     document.getElementById('resultAcademicBackground').textContent = academicBackground;
     document.getElementById('resultWebDevelopment').textContent = webDevelopment;
     document.getElementById('resultPlatform').textContent = platform;
-    document.getElementById('resultCourses').textContent = courseList.join(', ');
+    
+    // Handle the image display if there is an uploaded image
+    if (imageFile) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const imageElement = document.getElementById('resultImage');
+            imageElement.src = e.target.result;  // Set the image source to the uploaded file
+            imageElement.style.display = 'block';  // Ensure image is displayed
+        };
+        reader.readAsDataURL(imageFile);
+    } else {
+        // If no image is uploaded, hide the image element
+        document.getElementById('resultImage').style.display = 'none';
+    }
+
+    // Display courses as a list
+    const resultCourses = document.getElementById('resultCourses');
+    resultCourses.innerHTML = '';  // Clear the existing list
+    courseList.forEach(course => {
+        const listItem = document.createElement('li');
+        listItem.textContent = course;
+        resultCourses.appendChild(listItem);
+    });
+
+    // Display other fields
     document.getElementById('resultFunnyThing').textContent = funnyThing;
     document.getElementById('resultAnythingElse').textContent = anythingElse;
 
+    // Hide the form and show the results
     document.getElementById('introForm').style.display = 'none';
     document.getElementById('formResults').style.display = 'block';
 }
