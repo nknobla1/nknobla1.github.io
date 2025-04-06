@@ -21,6 +21,7 @@ function validateForm() {
 function resetForm() {
     document.getElementById('introForm').reset();
     document.getElementById('formResults').style.display = 'none';
+    document.getElementById('introForm').style.display = 'block';
 }
 
 // Add a new course text field
@@ -55,7 +56,7 @@ function displayResults(event) {
 
     // Create an array for the courses
     const courseList = [];
-    courses.forEach(course => {
+    courses.forEach((course) => {
         if (course.value.trim() !== '') {
             courseList.push(course.value);
         }
@@ -88,7 +89,7 @@ function displayResults(event) {
     // Display courses as a list
     const resultCourses = document.getElementById('resultCourses');
     resultCourses.innerHTML = '';  // Clear the existing list
-    courseList.forEach(course => {
+    courseList.forEach((course) => {
         const listItem = document.createElement('li');
         listItem.textContent = course;
         resultCourses.appendChild(listItem);
@@ -100,5 +101,6 @@ function displayResults(event) {
 
     // Hide the form and show the results
     document.getElementById('introForm').style.display = 'none';
+
     document.getElementById('formResults').style.display = 'block';
 }
