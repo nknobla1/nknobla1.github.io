@@ -1,0 +1,103 @@
+/* Reset some default styles */
+main{
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a{
+    color: d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover effect - change color to red */
+a:hover {
+    color: red; /* Change link color to red on hover */
+}
+
+/* Main content styling */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings styling */
+h2, h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+figure {
+    margin-bottom: 20px; /* Adjust the value to the space you need */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
