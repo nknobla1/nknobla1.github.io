@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nick Knoblauch's Nice Kangaroo | ITIS3135 | Slideshow</title>
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Slideshow</h2>
+
+        <div id="slideshow-container">
+            <div class="slide"><img src="images/notebook.png" alt="Notebook"><div class="caption">N - for Notebook</div></div>
+            <div class="slide"><img src="images/iPhone.png" alt="iPhone"><div class="caption">I - for iPhone</div></div>
+            <div class="slide"><img src="images/cup.png" alt="Cup"><div class="caption">C - for Cup</div></div>
+            <div class="slide"><img src="images/knife.png" alt="Knife"><div class="caption">K - for Knife</div></div>
+            <div class="slide"><img src="images/ketchup.png" alt="Ketchup"><div class="caption">K - for Ketchup</div></div>
+            <div class="slide"><img src="images/necktie.png" alt="Necktie"><div class="caption">N - for Necktie</div></div>
+            <div class="slide"><img src="images/onion.png" alt="Onion"><div class="caption">O - for Onion</div></div>
+            <div class="slide"><img src="images/bread.png" alt="Bread"><div class="caption">B - for Bread</div></div>
+            <div class="slide"><img src="images/lamp.png" alt="Lamp"><div class="caption">L - for Lamp</div></div>
+            <div class="slide"><img src="images/apron.png" alt="Apron"><div class="caption">A - for Apron</div></div>
+            <div class="slide"><img src="images/umbrella.png" alt="Umbrella"><div class="caption">U - for Umbrella</div></div>
+            <div class="slide"><img src="images/car.png" alt="Car"><div class="caption">C - for Car</div></div>
+            <div class="slide"><img src="images/hair.png" alt="Hair"><div class="caption">H - for Hair</div></div>
+        </div>
+
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+
+        <div class="thumbnails"></div>
+
+        <div id="prompts">
+            <h3>AI Prompts Used (via ChatGPT / DALL·E):</h3>
+            <ul>
+                <li>Notebook on a desk, natural lighting, landscape</li>
+                <li>Modern iPhone on table, sunlight, landscape view</li>
+                <li>Cup of coffee on a wooden surface, landscape photo</li>
+                <li>Stainless steel knife on cutting board, landscape</li>
+                <li>Open ketchup bottle next to fries, landscape format</li>
+                <li>Necktie folded on a white surface, flat lay, landscape</li>
+                <li>Red onion cut in half, on countertop, landscape photo</li>
+                <li>Loaf of bread on cutting board, natural light, landscape</li>
+                <li>Desk lamp turned on in a dark room, landscape shot</li>
+                <li>Apron hanging on wall hook, rustic setting, landscape</li>
+                <li>Umbrella leaning against a doorway, rainy setting, landscape</li>
+                <li>Red car parked on the street, side view, landscape</li>
+                <li>Hairbrush with strands of hair, soft lighting, landscape</li>
+            </ul>
+            <p>Tool used: DALL·E / ChatGPT (OpenAI)</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
