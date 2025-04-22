@@ -1,180 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Nick Knoblauch's Nice Kangaroo | ITIS3135 | Tables
-        </title>
-        <link rel="stylesheet" href="styles/default.css">
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div data-include="components/header.html"></div>
-        </header>
-    <main>
-        <h2>Tables</h2>
-        <h3>My Tabular Data</h3>
-        <ol>
-            <li>Bruce Wayne ~ bruce_wayne@gmail.com</li>
-            <li>Diana Prince ~ diana.prince@yahoo.com</li>
-            <li>Clark Kent ~ kalel_krypton@aol.com</li>
-            <li>Peter Parker ~ peterparker@yahoo.com</li>
-            <li>Oliver Queen ~ robin.greenhood@gmail.com</li>
-            <li>Bruce Banner ~ thehulk@aol.com</li>
-            <li>Steve Rogers ~ captain_avenger@yahoo.com</li>
-        </ol>
-        <h3>Employee Data in Simple Table</h3>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Years of Service</th>
-            </tr>
-            <tr>
-                <td>Bruce Wayne</td>
-                <td>bruce_wayne@gmail.com</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Diana Prince</td>
-                <td>diana.prince@yahoo.com</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Clark Kent</td>
-                <td>kalel_krypton@aol.com</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Peter Parker</td>
-                <td>peterparker@yahoo.com</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Oliver Queen</td>
-                <td>robin.greenhood@gmail.com</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Bruce Banner</td>
-                <td>thehulk@aol.com</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Steve Rogers</td>
-                <td>captain_avenger@yahoo.com</td>
-                <td>9</td>
-            </tr>
-        </table>
-
-        <h3>Employee Data in Complex Table</h3>
-
-<figure>
-    <figcaption>Employee Information</figcaption>
-    <table class="complex-table">
+<head>
+    <meta charset="UTF-8">
+    <title>Nick Knoblauch's Nice Kangaroo | ITIS3135 | Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div data-include="components/header.html"></div>
+</header>
+<main>
+    <h2>Tables</h2>
+    <h3>My Tabular Data</h3>
+    <ol>
+        <li>Bruce Wayne ~ bruce_wayne@gmail.com</li>
+        <li>Diana Prince ~ diana.prince@yahoo.com</li>
+        <li>Clark Kent ~ kalel_krypton@aol.com</li>
+        <li>Peter Parker ~ peterparker@yahoo.com</li>
+        <li>Oliver Queen ~ robin.greenhood@gmail.com</li>
+        <li>Bruce Banner ~ thehulk@aol.com</li>
+        <li>Steve Rogers ~ captain_avenger@yahoo.com</li>
+    </ol>
+    <h3>Employee Data in Simple Table</h3>
+    <table>
         <tr>
-            <th>Category</th>
             <th>Name</th>
             <th>Email</th>
             <th>Years of Service</th>
-            <th>Monthly Salary</th>
         </tr>
         <tr>
-            <td rowspan="2">Marketing</td>
             <td>Bruce Wayne</td>
             <td>bruce_wayne@gmail.com</td>
             <td>3</td>
-            <td>$5,000</td>
         </tr>
         <tr>
             <td>Diana Prince</td>
             <td>diana.prince@yahoo.com</td>
             <td>6</td>
-            <td>$6,000</td>
         </tr>
         <tr>
-            <td rowspan="2">Sales</td>
             <td>Clark Kent</td>
             <td>kalel_krypton@aol.com</td>
             <td>4</td>
-            <td>$4,500</td>
         </tr>
         <tr>
             <td>Peter Parker</td>
             <td>peterparker@yahoo.com</td>
             <td>7</td>
-            <td>$4,800</td>
         </tr>
         <tr>
-            <td rowspan="2">Statistics</td>
             <td>Oliver Queen</td>
             <td>robin.greenhood@gmail.com</td>
             <td>1</td>
-            <td>$7,200</td>
         </tr>
         <tr>
             <td>Bruce Banner</td>
             <td>thehulk@aol.com</td>
             <td>2</td>
-            <td>$7,500</td>
         </tr>
         <tr>
-            <td>Management</td>
             <td>Steve Rogers</td>
             <td>captain_avenger@yahoo.com</td>
             <td>9</td>
-            <td>$8,000</td>
-        </tr>
-        <tr>
-            <th colspan="3">Total Years of Service</th>
-            <td>32</td>
-            <td>$43,500</td>
         </tr>
     </table>
-</figure>
 
+    <h3>Employee Data in Complex Table</h3>
 
+    <figure>
+        <figcaption>Employee Information</figcaption>
+        <table class="complex-table">
+            <tr>
+                <th id="category">Category</th>
+                <th id="name">Name</th>
+                <th id="email">Email</th>
+                <th id="years">Years of Service</th>
+                <th id="salary">Monthly Salary</th>
+            </tr>
+            <tr>
+                <td rowspan="2" headers="category">Marketing</td>
+                <td headers="name">Bruce Wayne</td>
+                <td headers="email">bruce_wayne@gmail.com</td>
+                <td headers="years">3</td>
+                <td headers="salary">$5,000</td>
+            </tr>
+            <tr>
+                <td headers="name">Diana Prince</td>
+                <td headers="email">diana.prince@yahoo.com</td>
+                <td headers="years">6</td>
+                <td headers="salary">$6,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2" headers="category">Sales</td>
+                <td headers="name">Clark Kent</td>
+                <td headers="email">kalel_krypton@aol.com</td>
+                <td headers="years">4</td>
+                <td headers="salary">$4,500</td>
+            </tr>
+            <tr>
+                <td headers="name">Peter Parker</td>
+                <td headers="email">peterparker@yahoo.com</td>
+                <td headers="years">7</td>
+                <td headers="salary">$4,800</td>
+            </tr>
+            <tr>
+                <td rowspan="2" headers="category">Statistics</td>
+                <td headers="name">Oliver Queen</td>
+                <td headers="email">robin.greenhood@gmail.com</td>
+                <td headers="years">1</td>
+                <td headers="salary">$7,200</td>
+            </tr>
+            <tr>
+                <td headers="name">Bruce Banner</td>
+                <td headers="email">thehulk@aol.com</td>
+                <td headers="years">2</td>
+                <td headers="salary">$7,500</td>
+            </tr>
+            <tr>
+                <td headers="category">Management</td>
+                <td headers="name">Steve Rogers</td>
+                <td headers="email">captain_avenger@yahoo.com</td>
+                <td headers="years">9</td>
+                <td headers="salary">$8,000</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total Years of Service</th>
+                <td>32</td>
+                <td>$43,500</td>
+            </tr>
+        </table>
+    </figure>
 
-<style>
-    .complex-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+    <style>
+        .complex-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-.complex-table th, .complex-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
+        .complex-table th, .complex-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
 
-.complex-table th {
-    background-color: #555;
-    color: white;
-}
+        .complex-table th {
+            background-color: #555;
+            color: white;
+        }
 
-.complex-table tr:nth-child(even) {
-    background-color: teal;
-}
+        .complex-table tr:nth-child(even) {
+            background-color: teal;
+        }
 
-.complex-table tr:nth-child(odd) {
-    background-color: purple;
-}
+        .complex-table tr:nth-child(odd) {
+            background-color: purple;
+        }
 
-.complex-table tr:first-child {
-    background-color: #333;
-    color: white;
-}
-
-</style>
-
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script>
-        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+        .complex-table tr:first-child {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</main>
+<footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+<script>
+    document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+<script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
