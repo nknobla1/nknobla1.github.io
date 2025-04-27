@@ -1,26 +1,35 @@
-/* Reset some default styles */
-main{
+
+main {
     text-align: left;
     width: 95%;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Body styling */
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
+    transition: background-color 0.5s, color 0.5s; 
 }
 
-/* Header styles */
+
 header {
     background-color: #4CAF50;
     color: white;
     padding: 20px 0;
     text-align: center;
+    transition: background-color 0.5s;
 }
 
 h1 {
@@ -28,7 +37,7 @@ h1 {
     margin: 0;
 }
 
-/* Navigation bar styles */
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -40,45 +49,37 @@ nav ul li {
     margin: 0 15px;
 }
 
-a{
-    color: d;
+a {
+    color: blue; 
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Hover effect - change color to red */
+
 a:hover {
-    color: red; /* Change link color to red on hover */
+    color: red;
 }
 
-/* Main content styling */
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-/* Headings styling */
 h2, h3 {
     color: #4CAF50;
     margin-bottom: 10px;
 }
 
-/* Paragraph styling */
+
 p {
     margin-bottom: 15px;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 30px;
+    transition: background-color 0.5s;
 }
 
 footer p {
@@ -86,12 +87,11 @@ footer p {
 }
 
 figure {
-    margin-bottom: 20px; /* Adjust the value to the space you need */
+    margin-bottom: 20px;
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
-    
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -100,4 +100,49 @@ figure {
     main {
         padding: 15px;
     }
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode main {
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode a {
+    color: #9acd32; 
+}
+
+body.dark-mode a:hover {
+    color: lightcoral; 
+}
+
+
+
+#darkModeToggle {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ccc;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #555;
+    color: #f0f0f0;
 }

@@ -1,6 +1,4 @@
-// dynamicHeaderFooter.js
 
-// Dynamic Header
 document.getElementById("dynamicHeader").innerHTML = `
   <nav>
     <a href="./">Home</a>
@@ -15,7 +13,7 @@ document.getElementById("dynamicHeader").innerHTML = `
   </nav>
 `;
 
-// Dynamic Footer
+
 document.getElementById("dynamicFooter").innerHTML = `
   <p>Page Built By <a href="../nickknoblauchdesigns.com/">Nick Knoblauch</a> &copy; 2025</p>
   <a id="validation-button-html" href="#">
@@ -26,7 +24,7 @@ document.getElementById("dynamicFooter").innerHTML = `
   </a>
 `;
 
-// Make validation buttons dynamic
+
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("validation-button-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
   document.getElementById("validation-button-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
