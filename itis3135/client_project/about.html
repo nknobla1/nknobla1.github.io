@@ -8,19 +8,7 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="./">Home</a>
-                ~
-                <a href="overview.html">Prodcut Overview</a>
-                ~
-                <a href="samples.html">Product Sampling</a>
-                ~
-                <a href="about.html">About KMK Custom Creations</a>
-                ~
-                <a href="information.html">Additional Information</a>
-            </nav>
-        </header>
+        <header id="dynamicHeader"></header>
     <main>
         <h2>About the Client</h2>
 
@@ -44,19 +32,9 @@
             By giving a glimp into her product, and more background info.
         </p>
     </main>
-    <footer>
-        <p>Page Built By <a href="nickknoblauchdesigns.com/">Nick Knoblauch</a> &copy; 2025</p>
-        <a id="validation-button-html">
-            <img src="../images/htmlValidationButton.png" alt="html validation button">
-        </a>
-        <a id="validation-button-css">
-            <img src="../images/cssValidationButton.png" alt="css validation button">
-        </a>
-    </footer>
-    <script>
-        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+    <footer id="dynamicFooter"></footer>
+
+    <script src="scripts/headerFooter.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Nick Knoblauch's Nice Kangaroo | Client Project | Home
-        </title>
-        <link rel="stylesheet" href="styles/default.css">
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="./">Home</a>
-                ~
-                <a href="overview.html">Prodcut Overview</a>
-                ~
-                <a href="samples.html">Product Sampling</a>
-                ~
-                <a href="about.html">About KMK Custom Creations</a>
-                ~
-                <a href="information.html">Additional Information</a>
-            </nav>
-        </header>
-    <main>
-        <h2>Home</h2>
-        <h3>Welcome to the Promotion Site for KMK Custom Creations</h3>
-        <p>Check out our latest offerings at <a href="https://kmkcustomcreations.us/" target="_blank">KMK Custom Creations</a>.</p>
-            
-        <figure>
-            <img src="images/capture.png" alt="home capture" width="300">
-            <figcaption>In Short, this is what KMK Promises!</figcaption>
-        </figure>
+<head>
+    <meta charset="UTF-8">
+    <title>Nick Knoblauch's Nice Kangaroo | Client Project | Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-        <p>
-            This site is dedicated to the hard work and effort put forth by Kristyna Knoblauch, 
-            who you can learn more about by navigating this website and also learn more about their product. 
-            On this site you're going to learn a general overview of her catalog of work, 
-            a few specific examples of her work, and any additional information you may require.  
-        </p>
+<header id="dynamicHeader"></header>
 
-    </main>
-    <footer>
-        <p>Page Built By <a href="../nickknoblauchdesigns.com/">Nick Knoblauch</a> &copy; 2025</p>
-        <a id="validation-button-html">
-            <img src="../images/htmlValidationButton.png" alt="html validation button">
-        </a>
-        <a id="validation-button-css">
-            <img src="../images/cssValidationButton.png" alt="css validation button">
-        </a>
-    </footer>
-    <script>
-        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+<main>
+    <h2>Home</h2>
+    <h3>Welcome to the Promotion Site for KMK Custom Creations</h3>
+    <p>Check out our latest offerings at 
+        <a href="https://kmkcustomcreations.us/" target="_blank">KMK Custom Creations</a>.
+    </p>
+        
+    <figure>
+        <img src="images/capture.png" alt="home capture" width="300">
+        <figcaption>In Short, this is what KMK Promises!</figcaption>
+    </figure>
+
+    <p>
+        This site is dedicated to the hard work and effort put forth by Kristyna Knoblauch, 
+        who you can learn more about by navigating this website and also learn more about their product. 
+        On this site you're going to learn a general overview of her catalog of work, 
+        a few specific examples of her work, and any additional information you may require.  
+    </p>
+</main>
+
+<footer id="dynamicFooter"></footer>
+
+<script src="scripts/headerFooter.js"></script>
+<script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
