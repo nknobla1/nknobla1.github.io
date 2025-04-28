@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nick Knoblauch's Nice Kangaroo | ITIS3135 | Drawing
+        </title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+    <main>
+        <h2>Drawing</h2>
+        <p>Below is an Example from the p5.js website. <a href="https://p5js.org/examples/animation-and-variables-drawing-lines/">Drawing Lines</a></p>
+
+        <p>
+            The first canvas is the example from the site, and the second is a blank canvas with just the color blue for drawing.
+            Some extra JS was added to get the canvases to work independently of eachother, and to be placed one above the other on the webpage.
+            A basic way to test different values for colors, stroke weights, and background color was the basic idea for the implementation.
+        </p>
+
+        <div id="canvas1"></div>
+        <div id="canvas2"></div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href","https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+    <script src="scripts/sketch.js"></script>
+</body>
+</html>
